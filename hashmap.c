@@ -156,6 +156,15 @@ Pair * nextMap(HashMap * map)
 {    
     if(map == NULL) return NULL;
 
+    for(long long i = map->current +1; i < map->capacity; i++)
+        {
+            if(map->buckets[i] != NULL)
+            {
+                map->current = i;
+                return map->buckets[i];
+            }
+        }
+
     return NULL;
 }
 
