@@ -182,7 +182,7 @@ Pair * nextMap(HashMap * map)
 
 void enlarge(HashMap * map) 
 {
-    Pair ** old_buckets = map->buquets;
+    Pair ** old_buckets = map->buckets;
     long long old_capacity = map->capacity;
 
     map->capacity = map->capacity * 2;
