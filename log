@@ -55,3 +55,14 @@ Sun Apr 19 09:59:18 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 dc57797
+Mon Apr 20 01:50:40 AM UTC 2026: 
+ hashmap.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:185:32: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘buquets’; did you mean ‘buckets’?
+  185 |     Pair ** old_buckets = map->buquets;
+      |                                ^~~~~~~
+      |                                buckets
+7a1b2e0
