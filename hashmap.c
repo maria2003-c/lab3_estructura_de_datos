@@ -191,7 +191,7 @@ void enlarge(HashMap * map)
 
     for(long long i = 0; i < old_capacity; i++)
         {
-            if(old_buckets[i]->key != NULL)
+            if(old_buckets[i] != NULL && old_buckets[i]->key != NULL)
             {
                 insertMap(map, old_buckets[i]->key, old_buckets[i]->value);
             }
@@ -199,8 +199,6 @@ void enlarge(HashMap * map)
     
     
     enlarge_called = 1; //no borrar (testing purposes)
-
-
 }
 
 
